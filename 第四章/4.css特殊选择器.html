@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .yi{
+            color:red;
+        } */
+        /* li:first-child{
+            color:red;
+        }
+        li:last-child{
+            color:blue;
+        }
+        li:nth-child(2){
+            color:green;
+        } */
+        /* li:nth-child(2n+1){
+            color:pink;
+        }
+        li:nth-child(2n){ 
+            color:yellow;
+        } */
+        li:not(:nth-child(4)) {
+            /*除了第四项，都会选择红色*/
+            color: red;
+        }
+
+        a:link {
+            /*未访问过的标签*/
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: pink;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        .text::first-letter{
+            color:red;
+        }
+        .text::first-line{
+            color:red;
+        }
+        .text::selection{
+            color:green;
+        }
+        .text::before{
+            content:'小滴课堂';
+        }
+        .text::after{
+            content:'小滴课堂';
+        }
+
+        /* span::first-line{
+            color:red;
+        } */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <!-- <li class="yi">前端</li> -->
+        <li>前端</li>
+        <li>后端</li>
+        <li>测试</li>
+        <li>大数据</li>
+        <li>课程</li>
+        <li>小滴</li>
+
+        <a href="http://xdclass.net">小滴肯堂</a>
+
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, explicabo. Eligendi ad commodi mollitia,
+            recusandae voluptatem quia reprehenderit labore, quae, beatae quaerat autem architecto ipsum at. Veritatis
+            sed magnam provident voluptatem dicta maiores aperiam, ad natus repellendus? Velit accusamus laboriosam rem,
+            consequatur voluptatem dolores nisi. Atque fuga porro necessitatibus commodi blanditiis quasi voluptate quia
+            consequuntur veniam ut aut dolore odio illo quibusdam maiores alias, magnam delectus quaerat id totam cumque
+            facilis officiis eveniet. Veniam reiciendis quisquam consequatur mollitia quibusdam repellat voluptas
+            facilis ad excepturi. Officiis maiores facere deserunt magnam, laudantium aspernatur natus beatae eos eaque,
+            iure quos aliquid dolorum ex est tempore inventore pariatur doloremque quidem. Doloribus quos vero amet odit
+            omnis ratione, expedita ea libero aliquid eius ipsum et totam aperiam maxime, odio quisquam tenetur culpa
+            fugit hic nam. Earum eius cupiditate necessitatibus esse odio facilis atque, quisquam error voluptates
+            maiores magnam tempora iste. Ab ratione quis eaque molestias accusantium aliquid soluta quas, maxime, nulla
+            corporis impedit quia tenetur ipsa amet at suscipit adipisci cumque nam culpa iure voluptas? Quisquam,
+            perspiciatis odit cupiditate, exercitationem temporibus beatae dolorum quis consequatur laudantium animi
+            voluptas repudiandae nemo quod fugiat eius ex provident corrupti fugit eaque, officiis repellendus facilis!
+            Repellat officia dolorem voluptatem!
+        </div>
+        <br>
+        <span>
+            perspiciatis odit cupiditate, exercitationem temporibus beatae dolorum quis consequatur laudantium animi
+            voluptas repudiandae nemo quod fugiat eius ex provident corrupti fugit eaque, officiis repellendus facilis!
+            Repellat officia dolorem voluptatem!
+        </span>
+    </ul>
+</body>
+
+</html>
