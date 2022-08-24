@@ -149,6 +149,7 @@
     width: 220px;
     height: 350px;
     overflow: hidden;
+    position:relative;
 }
 
 .content_item:hover{
@@ -221,11 +222,52 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    padding: 50px 0;
+    box-shadow: 0 4px 8px 0 rgb(7 17 27 /20%);
 }
 
+.feel{
+    text-align: center;
+    width:60px;
+    position: absolute;
+    background-color: #ea951b;
+    top: 0;
+    right:0;
+    color:#fff;
+    border-radius: 0 0 0  12px;
+
+}
 .new_list_con{
     width: 1000px;
     height: 638px;
     display: flex;
     justify-content: space-between;
+}
+
+.icon_item{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.foot{
+    width: 432px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding : 50px 0;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.foot_text{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin:10px 0;
+    border-bottom: 1px solid #000;
+}
+
+.text_item{
+    margin-right: 10px;
 }
